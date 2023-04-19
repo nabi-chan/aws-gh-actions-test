@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: aws-actions/configure-aws-credentials@v1
+      - uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::459964240689:role/github-action-s3-full-access
           aws-region: "ap-northeast-2"
