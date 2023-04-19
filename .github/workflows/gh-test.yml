@@ -13,7 +13,7 @@ jobs:
           node-version: 16
       - uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::459964240689:role/ec2-test-s3-full-access
+          role-to-assume: arn:aws:iam::459964240689:role/github-action-s3-full-access
           aws-region: "ap-northeast-2"
       - run: npm install aws-sdk
       - run: node index.js
